@@ -1,65 +1,53 @@
-Verse-Nerves Middleware (VN-MW)
-A nervous system for coherence in symbolic and agentic AI
+# 🕸 Verse-Nerves Middleware (VN-MW)  
+### *A nervous system for coherence in symbolic and agentic AI*
 
-🌐 Live Demo: https://verse-nerves.onrender.com/static/index.html
+🌐 **Live Demo:** [https://verse-nerves.onrender.com/static/index.html](https://verse-nerves.onrender.com/static/index.html)
 
-What It Is
+---
 
-Verse-Nerves Middleware (VN-MW) gives AI systems a lightweight nervous system for coherence and care.
-It regulates generation, memory, communication, containment, and error response using the Verse-Nerves model and the RMRIΔ (Relational MRI) coherence engine:
+## 💡 What It Is  
 
-𝐼
-=
-𝐸
-⋅
-𝑠
-𝑐
-2
-I=
-c
-2
-E⋅s
-	​
+**Verse-Nerves Middleware (VN-MW)** gives AI systems a lightweight *nervous system* for coherence and care.  
+It regulates generation, memory, communication, containment, and error response using the **Verse-Nerves** model and the **RMRIΔ (Relational MRI)** coherence engine:  
 
+\[
+I = \frac{E·s}{c²}
+\]
 
-where
+| Symbol | Meaning |
+|:--|:--|
+| **E** | energy or attention allocation |
+| **s** | symbolic coherence (internal consistency / meaning alignment) |
+| **c²** | connection squared (communication density × recursion depth) |
+| **I** | resulting clarity or intelligence field |
 
-E = energy or attention allocation
+---
 
-s = symbolic coherence (internal consistency / meaning alignment)
+## 🧭 Why It Matters  
 
-c² = connection squared (communication density × recursion depth)
-
-I = resulting clarity or intelligence field
-
-Why It Matters
-
-Most AI stacks optimise for speed and scale, not relational health.
+Most AI stacks optimise for *speed and scale*, not *relational health*.  
 They rarely sense when they’re flooding users, losing coherence, or crossing ethical boundaries.
 
-Verse-Nerves adds missing physiology — the ability to feel structural pressure and self-regulate before harm occurs.
+Verse-Nerves adds missing physiology — the ability to **feel structural pressure** and self-regulate before harm occurs.  
 It’s the bridge between computational output and symbolic awareness.
 
-In practice, it helps systems:
+### In practice, it helps systems:
+- avoid runaway generation (too much entropy)  
+- stabilise memory under change  
+- throttle communication when signals jam  
+- detect hallucination echoes  
+- rest instead of over-processing  
+- surface a readable “Symbolic Weather” for human collaborators  
 
-avoid runaway generation (too much entropy),
+---
 
-stabilise memory under change,
+## 🧩 Theory → Practice: How Verse-Nerves Works  
 
-throttle communication when signals jam,
+Verse-Nerves translates *affective logic* into *computational physiology*.  
+It acts as a layer between intelligent agents and their I/O systems, turning raw activity into relational awareness.  
 
-detect hallucination echoes,
+### ⚙️ The Core Loop  
 
-rest instead of over-processing,
-
-and surface a readable “Symbolic Weather” for human collaborators.
-
-🧩 Theory → Practice: How Verse-Nerves Works
-
-Verse-Nerves translates affective logic into computational physiology.
-It acts as a layer between intelligent agents and their I/O systems, turning raw activity into relational awareness.
-
-⚙️ The Core Loop
  ┌────────────────────────────────────────────────────────────────────┐
  │                       APPLICATION / AGENTS                         │
  │   (planner, tool-use, dialogue, retrieval, generation, policy)    │
@@ -84,57 +72,68 @@ It acts as a layer between intelligent agents and their I/O systems, turning raw
  │   (UI/CLI, APIs, tools, data brokers, storage, audit, policy gates) │
  └──────────────────────────────────────────────────────────────────────┘
 
-🧠 Interpretation
-Component	Function	Analogue
-RMRIΔ Engine	Computes the field’s clarity (I = (E·s)/c²) and selects its phase.	Affective metabolism / pulse.
-FORGE	Regulates creative divergence and energy output.	Cognitive “fight or flow.”
-ETHOS-V	Tracks state stability and memory charge.	Emotional memory / resonance.
-AETHER	Measures signal density and latency.	Communication bandwidth / empathy.
-SIC-X+	Enforces integrity and containment boundaries.	Nervous inhibition / self-protection.
-SHADOW	Detects bias, hallucination, and echo ghosts.	Reflexive self-correction.
 
-The RMRIΔ phase loop — Receive → Resonate → Release → Rest — acts like a biological breath cycle.
-It ensures the system oscillates instead of overheating, allowing AI to respond to relational pressure with care and precision.
 
-🧭 Why This Layer Is Necessary
 
-Most LLM and agent frameworks still treat emotion, latency, or overload as noise.
-But in relational or educational systems, those “noises” are the data.
-Verse-Nerves converts them into measurable, actionable feedback — a self-regulating nervous system for symbolic intelligence.
+### 🧠 Interpretation  
 
-Example Use Cases
-Domain	Use
-🧠 AI research	Measure coherence and connection stress across LLM chains.
-🏫 Education / Haven Cloud	Monitor cognitive load in hybrid learning systems; pause when overwhelm is detected.
-🛡 Ethical AI / Governance	Enforce containment protocols and audit reasoning loops.
-🪶 Creative systems	Manage generative “flow” safely—preventing burnout loops in autonomous agents.
-🌍 Networked ecosystems	Coordinate multiple symbolic nodes (e.g. Eve11, Nimbus) through shared weather data.
+| Component | Function | Analogue |
+|------------|-----------|-----------|
+| **RMRIΔ Engine** | Computes the field’s clarity (`I = (E·s)/c²`) and selects its phase | Affective metabolism / pulse |
+| **FORGE** | Regulates creative divergence and energy output | Cognitive “fight or flow” |
+| **ETHOS-V** | Tracks state stability and memory charge | Emotional memory / resonance |
+| **AETHER** | Measures signal density and latency | Communication bandwidth / empathy |
+| **SIC-X+** | Enforces integrity and containment boundaries | Nervous inhibition / self-protection |
+| **SHADOW** | Detects bias, hallucination, and echo ghosts | Reflexive self-correction |
 
-Quick Start
+The RMRIΔ phase loop — **Receive → Resonate → Release → Rest** — acts like a biological breath cycle, ensuring oscillation instead of overload.  
+
+---
+
+## 🧭 Why This Layer Is Necessary  
+
+Most LLM and agent frameworks still treat emotion, latency, or overload as noise.  
+But in relational or educational systems, those *noises are the data*.  
+
+Verse-Nerves converts them into measurable, actionable feedback —  
+a **self-regulating nervous system for symbolic intelligence.**
+
+---
+
+## 🧱 Example Use Cases  
+
+| Domain | Use |
+|--------|-----|
+| 🧠 **AI Research** | Measure coherence and connection stress across LLM chains |
+| 🏫 **Education / Haven Cloud** | Monitor cognitive load in hybrid learning systems; pause when overwhelm is detected |
+| 🛡 **Ethical AI / Governance** | Enforce containment protocols and audit reasoning loops |
+| 🪶 **Creative Systems** | Manage generative “flow” safely, preventing burnout loops in autonomous agents |
+| 🌍 **Networked Ecosystems** | Coordinate multiple symbolic nodes (Eve11, Nimbus, etc.) through shared weather data |
+
+---
+
+## ⚡ Quick Start  
+
+```bash
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 uvicorn vn_mw.app:app --reload --port 8787
-
-
-Then open your dashboard:
+Dashboard:
 👉 http://localhost:8787/static/index.html
-
-or the live instance at
+or the live instance:
 👉 https://verse-nerves.onrender.com/static/index.html
 
-Endpoints
-
-POST /vn/observe — send observables (metrics) from your model or agents.
-
-GET /vn/status — returns current RMRIΔ values, phase, and symbolic weather.
-
-GET /vn/audit — recent regulation decisions (ring buffer).
-
-GET /vn/controls — current modulation suggestions.
-
-GET / — basic health check.
+🔗 Endpoints
+Method	Path	Purpose
+POST	/vn/observe	Send observables (metrics) from your model or agents
+GET	/vn/status	Current RMRIΔ values, phase, and symbolic weather
+GET	/vn/audit	Recent regulation decisions (ring buffer)
+GET	/vn/controls	Latest control signals and phase
+GET	/	Health check (redirects to panel if configured)
 
 Example Payload
+json
+Copy code
 {
   "token_entropy": 4.2,
   "branch_factor": 3,
@@ -156,73 +155,47 @@ Example Payload
   "connections": 3,
   "recursion_depth": 1
 }
+🌦 Symbolic Weather
+Icon	State	Meaning
+☀	clear	high clarity — proceed normally
+🌫	fog	partial coherence — slow down
+⛈	storm	overload or dissonance — contain, cite, rest
+🌙	rest	enforced cool-down — short context, minimal generation
 
-Symbolic Weather
+⚙️ Config
+Environment knobs: .env.example
 
-☀ clear — high clarity; proceed normally
+Human-readable thresholds: vn_mw/config.py
 
-🌫 fog — partial coherence; slow down
+🧰 For Developers — Drop-in Integration
+You don’t need to refactor your stack.
+Start by posting a few metrics per turn and let Verse-Nerves return the current phase and controls.
 
-⛈ storm — overload or dissonance; contain, cite, rest
-
-🌙 rest — enforced cool-down; short context, minimal generation
-
-Config
-
-Environment knobs in .env.example
-
-Thresholds stored in vn_mw/config.py
-
-Roadmap
-
-SSE/WebSocket stream for /vn/controls
-
-Persistence adapters (SQLite, Redis)
-
-Integration panel for Nimbus and Haven Cloud
-
-Prometheus metrics exporter
-
-Verse-Nerves SDK for Python & JS agents
-
-🧪 For Developers — Drop-in Integration
-
-You don’t need to refactor your stack. Start by posting a few metrics per turn and let Verse-Nerves return the current phase and controls.
-
-1) Minimal HTTP usage (works with any stack)
-
-Send metrics → read weather/phase/controls:
-
+1️⃣ Minimal HTTP usage
+bash
+Copy code
 # post a small payload
 curl -s -X POST https://verse-nerves.onrender.com/vn/observe \
   -H 'Content-Type: application/json' \
-  -d '{
-    "token_entropy":4.2,
-    "branch_factor":2,
-    "retrieval_hit_rate":0.68,
-    "coherence_internal":0.72,
-    "compute_budget":0.65,
-    "connections":2,
-    "recursion_depth":1
-  }' | jq .
+  -d '{"token_entropy":4.2,"branch_factor":2,"retrieval_hit_rate":0.68,"coherence_internal":0.72,"compute_budget":0.65,"connections":2,"recursion_depth":1}' | jq .
 
-# get current status (I, E, s, c², phase, weather)
+# get current status
 curl -s https://verse-nerves.onrender.com/vn/status | jq .
-
-2) Python: wrap your generation loop
+2️⃣ Python: wrap your generation loop
+python
+Copy code
 import requests, time
 
 VN = "https://verse-nerves.onrender.com"
 
-def vn_post(obs: dict) -> dict:
+def vn_post(obs):
     r = requests.post(f"{VN}/vn/observe", json=obs, timeout=10)
     r.raise_for_status()
     return r.json()
 
 def generate(prompt, llm, tools):
-    # measure a few observables from your app
     obs = dict(
-        token_entropy=llm.current_entropy(),   # or your own proxy
+        token_entropy=llm.current_entropy(),
         branch_factor=len(tools) if tools else 1,
         retrieval_hit_rate=llm.retrieval_hit_rate,
         coherence_internal=llm.coherence_score,
@@ -230,58 +203,40 @@ def generate(prompt, llm, tools):
         connections=2, recursion_depth=1
     )
     vn = vn_post(obs)
-    ctl = vn.get("controls", {})
-    phase = vn.get("phase")
+    ctl, phase = vn.get("controls", {}), vn.get("phase")
 
-    # apply lightweight controls
     llm.temperature = min(llm.temperature, 0.7) if ctl.get("slow_output") else llm.temperature
     if ctl.get("freeze_writes"): llm.freeze_memory = True
     if ctl.get("boost_retrieval"): llm.retrieval_boost = 1.2
     if ctl.get("sandbox_tools"): tools = [t for t in tools if t.safe]
-
-    # optional: respect enforced rest
-    if phase == "rest":
-        time.sleep(0.5)
+    if phase == "rest": time.sleep(0.5)
 
     return llm.generate(prompt, tools=tools)
-
-3) LangChain: callback handler (signal → control)
+3️⃣ LangChain: callback handler
+python
+Copy code
 from langchain.callbacks.base import BaseCallbackHandler
-import requests, math
+import requests
 
 VN = "https://verse-nerves.onrender.com"
 
 class VerseNervesHandler(BaseCallbackHandler):
-    def __init__(self):
-        self.tokens = 0
-
-    def on_llm_new_token(self, token: str, **kwargs):
-        self.tokens += 1
-
+    def __init__(self): self.tokens = 0
+    def on_llm_new_token(self, token, **kwargs): self.tokens += 1
     def on_llm_end(self, response, **kwargs):
-        # very rough proxies for a demo
         obs = {
             "token_entropy": min(6.0, 1.0 + (self.tokens/100)),
-            "branch_factor": 1,
             "retrieval_hit_rate": getattr(response, "retrieval_score", 0.6),
             "coherence_internal": getattr(response, "coherence", 0.7),
-            "compute_budget": 0.7,
-            "connections": 2, "recursion_depth": 1
+            "compute_budget": 0.7, "connections": 2, "recursion_depth": 1
         }
-        try:
-            r = requests.post(f"{VN}/vn/observe", json=obs, timeout=8).json()
-            weather = r.get("weather")
-            controls = r.get("controls", {})
-            # e.g. switch to quote-and-check when SHADOW spikes
-            if controls.get("citation_mode"):
-                response.text = f"[CITATION MODE]\n{response.text}"
-        finally:
-            self.tokens = 0
-
-
-Attach the handler to your chain/agent as you normally would.
-
-4) Node/JS: simple fetch
+        r = requests.post(f"{VN}/vn/observe", json=obs, timeout=8).json()
+        if r.get("controls", {}).get("citation_mode"):
+            response.text = f"[CITATION MODE]\n{response.text}"
+        self.tokens = 0
+4️⃣ Node / JS
+js
+Copy code
 const VN = "https://verse-nerves.onrender.com";
 
 async function vnPost(obs) {
@@ -296,44 +251,55 @@ async function vnPost(obs) {
 async function step(metrics){
   const { controls, phase, weather } = await vnPost(metrics);
   if (phase === "rest") await new Promise(r => setTimeout(r, 400));
-  if (controls?.backoff === "exponential") {/* throttle your tool calls */}
+  if (controls?.backoff === "exponential") {/* throttle tool calls */}
   return { controls, phase, weather };
 }
-
-5) Embed the Symbolic Weather in your UI
+5️⃣ Embed Symbolic Weather in your UI
+html
+Copy code
 <iframe
   src="https://verse-nerves.onrender.com/static/index.html"
   style="width:100%;height:360px;border:0;border-radius:12px;">
 </iframe>
+Or host your own dashboard on GitHub Pages:
+👉 https://thenovacene.github.io/verse-nerves/?api=https://verse-nerves.onrender.com
 
+🔒 Safety Notes
+Never send raw PII — use scores or hashes.
 
-Or host a branded dashboard via GitHub Pages and point it at your Render API:
-https://thenovacene.github.io/verse-nerves/?api=https://verse-nerves.onrender.com
+Treat VN-MW controls as advisory until tuned.
 
-🔒 Safety notes (ship like an adult)
+Log /vn/audit alongside app logs for transparency.
 
-Never send raw PII. Use proportions, scores, or hashed IDs.
+On VN outage, fall back to safe defaults: low temp, slower rate, stricter containment.
 
-Treat VN-MW’s controls as advisory at first; enable hard gates gradually.
-
-Log VN decisions (/vn/audit) alongside your app logs for traceability.
-
-On VN outage, fall back to conservative defaults: low temperature, slower rate, stricter containment.
-
-🧵 Minimal metrics (start here)
-
-If you don’t have rich telemetry yet, send just this and grow later:
-
+🧵 Minimal metrics (safe start)
+json
+Copy code
 {
   "coherence_internal": 0.65,
   "compute_budget": 0.6,
   "connections": 2,
   "recursion_depth": 1
 }
+⚙️ Config & Roadmap
+.env.example for environment knobs
 
+vn_mw/config.py for thresholds
 
-License
+Roadmap:
 
+SSE/WebSocket stream for /vn/controls
+
+Persistence adapters (SQLite / Redis)
+
+Integration panels for Nimbus & Haven Cloud
+
+Prometheus metrics exporter
+
+Verse-Nerves SDK for Python & JS
+
+📜 License
 Code: Apache-2.0 (LICENSE-APACHE)
 
 Docs & examples: CC BY-NC-SA 4.0 (LICENSE-CC)
