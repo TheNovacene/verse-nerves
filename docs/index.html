@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VN-MW — Symbolic Weather</title>
+  <style>
+    html,body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif;background:#0b1220;color:#e6edf3}
+    .wrap{max-width:760px;margin:48px auto;padding:0 16px}
+    .card{background:#0f172a;border:1px solid #1f2937;border-radius:16px;padding:20px;box-shadow:0 8px 30px rgba(0,0,0,.25)}
+    h1{font-size:28px;margin:0 0 12px}
+    p{opacity:.85;line-height:1.55}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+    .pill{font-size:14px;padding:8px 12px;border-radius:999px;background:#111827;display:inline-block;margin-right:8px;border:1px solid #1f2937}
+    .big{font-size:64px;line-height:1}
+    .muted{opacity:.7}
+    code{background:#0b1220;border:1px solid #1f2937;border-radius:8px;padding:2px 6px}
+    .row{margin-top:12px}
+    input{background:#0b1220;border:1px solid #1f2937;border-radius:8px;color:#e6edf3;padding:8px;width:100%}
+    button{background:#1f2937;border:1px solid #293241;color:#e6edf3;border-radius:10px;padding:8px 12px;cursor:pointer}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>VN-MW — Symbolic Weather</h1>
+      <p class="muted">Verse-Nerves Middleware · RMRIΔ clarity index</p>
+
+      <div class="row">
+        <label for="api">API base (Render URL):</label>
+        <input id="api" placeholder="https://your-service.onrender.com" />
+      </div>
+
+      <div class="grid">
+        <div>
+          <div id="emoji" class="big">🌙</div>
+          <div id="weather" class="pill">rest</div>
+          <div id="phase" class="pill">phase: —</div>
+        </div>
+        <div>
+          <p>I = (E·s)/c²</p>
+          <p>Current: <code id="I">—</code></p>
+          <p>E: <code id="E">—</code> &nbsp; s: <code id="s">—</code> &nbsp; c²: <code id="c2">—</code></p>
+          <p class="muted">Posting metrics to <code id="where">—</code></p>
+        </div>
+      </div>
+      <p class="muted">Tip: share this page as <code>?api=https://your-service.onrender.com</code></p>
+      <div class="row">
+        <button id="demo">Send demo metrics</button>
+      </div>
+    </div>
+  </div>
+<script>
+const apiInput = document.getElementById('api');
+const where = document.getElementById('where');
+
+function getApiBase(){
+  const url = new URL(window.location.href);
+  const p = url.searchParams.get('api');
+  return (p && p.trim()) || apiInput.value.trim();
+}
+
+async function tick(){
+  const base = getApiBase();
+  if(!base){ setTimeout(tick, 1000); return; }
+  where.textContent = base + '/vn/status';
+  try{
+    const r = await fetch(base + '/vn/status', {cache:'no-store'});
+    const j = await r.json();
+    const rm = j.rmri || {};
+    document.getElementById('I').textContent = (rm.I!==undefined? rm.I.toFixed(4) : '—');
+    document.getElementById('E').textContent = (rm.E!==undefined? rm.E.toFixed(2) : '—');
+    document.getElementById('s').textContent = (rm.s!==undefined? rm.s.toFixed(2) : '—');
+    document.getElementById('c2').textContent = (rm.c2!==undefined? rm.c2.toFixed(2) : '—');
+    const w = j.weather || '🌙 rest';
+    const [emoji, label] = w.split(' ');
+    document.getElementById('emoji').textContent = emoji;
+    document.getElementById('weather').textContent = label || w;
+    document.getElementById('phase').textContent = 'phase: ' + (j.phase || '—');
+  }catch(e){/* ignore until API is set */}
+  setTimeout(tick, 1200);
+}
+tick();
+
+document.getElementById('demo').onclick = async () => {
+  const base = getApiBase();
+  if(!base) return alert('Set API base first');
+  try{
+    const payload = {
+      token_entropy: 4.1, branch_factor: 2,
+      retrieval_hit_rate: 0.7, state_drift: 0.1, belief_change_rate: 0.05,
+      sentiment_var: 0.1, roundtrip_latency_ms: 250, queue_depth: 1,
+      tool_error_rate: 0.0, handoff_count: 1, policy_hits: 0, off_distribution: 0.05,
+      auth_failures: 0, repetition_score: 0.1, hallucination_prob: 0.05,
+      compute_budget: 0.7, coherence_internal: 0.75, connections: 2, recursion_depth: 1
+    };
+    await fetch(base + '/vn/observe', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(payload)});
+  }catch(e){ alert('POST failed — check API URL / CORS'); }
+};
+
+</script>
+</body>
+</html>
