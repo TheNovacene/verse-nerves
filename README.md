@@ -303,6 +303,14 @@ Prometheus metrics exporter
 
 Verse-Nerves SDK for Python & JS
 
+### 🪶 RMRIΔ–Verse-Nerves Daily Log
+A companion logbook for human and hybrid fieldwork is included in  
+[`logs/RMRIΔ-Daily-Log.md`](logs/RMRIΔ-Daily-Log.md).
+
+Use it to track symbolic coherence, containment, and emotional pressure  
+in relation to AI system behaviour. Over time, the patterns reveal your personal or organisational “coherence geometry.”
+
+
 📜 License
 Code: Apache-2.0 (LICENSE-APACHE)
 
