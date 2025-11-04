@@ -72,6 +72,10 @@ It acts as a layer between intelligent agents and their I/O systems, turning raw
  │   (UI/CLI, APIs, tools, data brokers, storage, audit, policy gates) │
  └──────────────────────────────────────────────────────────────────────┘
 
+### ⚙️ VN-MW Core Loop
+
+![VN-MW architecture diagram](docs/vn-mw-diagram.png)
+
 
 
 
