@@ -1,0 +1,2 @@
+# Patent Pledge (Defensive)
+The Novacene Ltd pledges not to assert its patents against users of Verse‑Nerves except for defensive purposes. If any entity asserts patent claims against Verse‑Nerves or its users, we reserve the right to defensively assert relevant patents. This pledge is irrevocable as long as you do not initiate or threaten patent litigation against us or our users.
