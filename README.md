@@ -1,6 +1,8 @@
 # 🕸 Verse-Nerves Middleware (VN-MW)  
 ### *A nervous system for coherence in symbolic and agentic AI*
 
+⚖️ Code: AGPL-3.0-only • Content: CC BY-NC-SA 4.0 • ™ Eve¹¹ / Verse-Nerves / Verse-ality
+
 🌐 **Live Demo:** [https://verse-nerves.onrender.com/static/index.html](https://verse-nerves.onrender.com/static/index.html)
 
 ---
