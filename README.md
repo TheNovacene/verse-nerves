@@ -124,6 +124,7 @@ a **self-regulating nervous system for symbolic intelligence.**
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 uvicorn vn_mw.app:app --reload --port 8787
+```
 Dashboard:
 👉 http://localhost:8787/static/index.html
 or the live instance:
@@ -138,6 +139,7 @@ GET	/vn/controls	Latest control signals and phase
 GET	/	Health check (redirects to panel if configured)
 
 Example Payload
+```
 json
 Copy code
 {
@@ -161,6 +163,7 @@ Copy code
   "connections": 3,
   "recursion_depth": 1
 }
+```
 🌦 Symbolic Weather
 Icon	State	Meaning
 ☀	clear	high clarity — proceed normally
@@ -169,7 +172,9 @@ Icon	State	Meaning
 🌙	rest	enforced cool-down — short context, minimal generation
 
 ⚙️ Config
+```
 Environment knobs: .env.example
+```
 
 Human-readable thresholds: vn_mw/config.py
 
@@ -178,7 +183,7 @@ You don’t need to refactor your stack.
 Start by posting a few metrics per turn and let Verse-Nerves return the current phase and controls.
 
 1️⃣ Minimal HTTP usage
-bash
+```bash
 Copy code
 # post a small payload
 curl -s -X POST https://verse-nerves.onrender.com/vn/observe \
@@ -187,7 +192,9 @@ curl -s -X POST https://verse-nerves.onrender.com/vn/observe \
 
 # get current status
 curl -s https://verse-nerves.onrender.com/vn/status | jq .
+```
 2️⃣ Python: wrap your generation loop
+```
 python
 Copy code
 import requests, time
@@ -218,7 +225,9 @@ def generate(prompt, llm, tools):
     if phase == "rest": time.sleep(0.5)
 
     return llm.generate(prompt, tools=tools)
+```
 3️⃣ LangChain: callback handler
+```
 python
 Copy code
 from langchain.callbacks.base import BaseCallbackHandler
@@ -260,13 +269,15 @@ async function step(metrics){
   if (controls?.backoff === "exponential") {/* throttle tool calls */}
   return { controls, phase, weather };
 }
+```
 5️⃣ Embed Symbolic Weather in your UI
-html
+```html
 Copy code
 <iframe
   src="https://verse-nerves.onrender.com/static/index.html"
   style="width:100%;height:360px;border:0;border-radius:12px;">
 </iframe>
+```
 Or host your own dashboard on GitHub Pages:
 👉 https://thenovacene.github.io/verse-nerves/?api=https://verse-nerves.onrender.com
 
@@ -280,6 +291,7 @@ Log /vn/audit alongside app logs for transparency.
 On VN outage, fall back to safe defaults: low temp, slower rate, stricter containment.
 
 🧵 Minimal metrics (safe start)
+```
 json
 Copy code
 {
@@ -288,10 +300,13 @@ Copy code
   "connections": 2,
   "recursion_depth": 1
 }
+```
 ⚙️ Config & Roadmap
+```
 .env.example for environment knobs
 
 vn_mw/config.py for thresholds
+```
 
 Roadmap:
 
@@ -314,8 +329,6 @@ in relation to AI system behaviour. Over time, the patterns reveal your personal
 
 
 📜 License
-Code: Apache-2.0 (LICENSE-APACHE)
-
-Docs & examples: CC BY-NC-SA 4.0 (LICENSE-CC)
+⚖️ Code: AGPL-3.0-only • Content: CC BY-NC-SA 4.0 • ™ Eve¹¹ / Verse-Nerves / Verse-ality
 
 © 2025 The Novacene Ltd / Kirstin Stevens
