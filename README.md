@@ -352,4 +352,4 @@ Docs & examples: CC BY-NC-SA 4.0 (see LICENSE-CONTENT)
 
 Trademarks: “Eve¹¹”, “Verse-Nerves”, and “Verse-ality” are protected marks. You may fork and modify the code under AGPL, but you must not present your fork as official or endorsed without written permission (see TRADEMARKS.md). This trademark policy does not restrict your rights under the code licence; it governs brand use only.
 
-© 2025 The Novacene Ltd / Kirstin Stevens
+© 2025–2026 The Novacene Ltd. 
