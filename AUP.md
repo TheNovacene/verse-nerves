@@ -44,8 +44,9 @@ No. Research, benchmarking, and evaluation are permitted. What is prohibited is 
 **2) Can we store logs and telemetry for safeguarding, audit, or compliance?**  
 Yes — if you minimise data, avoid raw PII, apply appropriate access controls/retention, and use logs for safety, QA, and incident response (not profiling, advertising, or surveillance).
 
-**3) What counts as “minors’ data”?**  
-Any data linked to a child (directly or indirectly), including behavioural patterns, usage traces, and inferred states. For minors, you need guardian consent and a lawful basis, and you must not target or manipulate.
+**3) Minors’ Data (What counts)**
+“Minors’ data” includes any information that can identify a learner **directly or indirectly**.  
+This includes names, initials, locations, school/LA context, needs/SEND details, behavioural patterns, session narratives, EHCP content, and any combination of details that could reasonably allow a person (or a system) to infer who the learner shows up as.
 
 **4) Are schools, LAs, and public bodies allowed to use Verse-Nerves?**  
 Yes — provided usage is non-extractive, safeguarding-aligned, and complies with this AUP, privacy law, and local governance requirements. If you need closed-source deployment or additional controls, use the commercial licence route.
@@ -61,6 +62,34 @@ Using Verse-Nerves data to rank staff/students, produce hidden “risk scores”
 
 **8) What happens if someone breaches the AUP?**  
 We may withdraw brand permissions, refuse support, suspend access to hosted services, and pursue legal remedies where appropriate.
+
+## EHCPs
+
+EHCPs are treated as **RED** by default.  
+Do not paste, upload, or process EHCP content in general-purpose AI tools (including via “redaction”) unless an explicitly approved workflow exists inside an organisation-controlled environment.
+
+## Prohibited Sharing
+
+Do not share “conversation links” (public URLs) from chat tools (ChatGPT/Claude/Gemini/etc.).  
+These links can publish your chat as a web page and may become searchable or accessible beyond intended recipients.
+
+
+## Recording, Transcription & AI Note-Takers (Meetings)
+
+**Allowed (GREEN)**  
+- Recording/transcribing internal training where **no learner data** is discussed, using approved organisational tools.
+
+**Review Required (AMBER)**  
+- Any recording/transcription where learner cases, safeguarding, EHCP content, or special category data could appear.
+
+**Prohibited (RED)**  
+- Running third-party transcription extensions/bots on meetings that include:
+  - safeguarding content, learner discussions, EHCPs, case notes, or health/SEND data  
+- Multiple simultaneous note-takers (e.g., two bots) without explicit approval.  
+- Posting or sharing transcript links publicly (including “shareable” bot links).
+
+**Rule:** If it wouldn’t be appropriate to forward the raw transcript to the learner’s parent/guardian, don’t create it.
+
 
 ## Reporting
 To report suspected misuse or a potential violation: **abuse@thenovacene.com**  
