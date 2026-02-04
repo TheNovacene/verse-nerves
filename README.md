@@ -14,7 +14,7 @@ The demo runs the open VN-MW core. If deployed as a network service, AGPL requir
 It regulates generation, memory, communication, containment, and error response using the **Verse-Nerves** model and the **RMRIΔ (Relational MRI)** coherence engine:  
 
 \[
-I = \frac{E·s}{c²}
+I = (E·s)/c²
 \]
 
 | Symbol | Meaning |
