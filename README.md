@@ -5,6 +5,7 @@
 
 🌐 **Live Demo:** [https://verse-nerves.onrender.com/static/index.html](https://verse-nerves.onrender.com/static/index.html)
 
+The demo runs the open VN-MW core. If deployed as a network service, AGPL requires offering the corresponding source to users of that service.
 ---
 
 ## 💡 What It Is  
@@ -24,6 +25,7 @@ I = \frac{E·s}{c²}
 | **I** | resulting clarity or intelligence field |
 
 ---
+Note on equations: RMRIΔ uses I = (E·s)/c² as an operational runtime meter for regulation (a live coherence index used to select phases and controls). Verse-ality’s broader field claim — often expressed as I = s·c² — describes how intelligence emerges through symbolic coherence and connection. RMRIΔ is the instrument panel; Verse-ality is the map.
 
 ## 🧭 Why It Matters  
 
@@ -117,6 +119,24 @@ a **self-regulating nervous system for symbolic intelligence.**
 | 🌍 **Networked Ecosystems** | Coordinate multiple symbolic nodes (Eve11, Nimbus, etc.) through shared weather data |
 
 ---
+## 💼 Commercial Add-Ons (Sustainability Model)
+
+VN-MW core is open under AGPL-3.0-only.
+We also offer paid, proprietary add-ons for organisations that need production operations, compliance, and scale.
+
+These commercial components integrate with VN-MW via stable APIs (they are not required to use the open core).
+
+Available / planned add-ons:
+
+Verse-Nerves Cloud Control Plane (hosted): multi-tenant orchestration, RBAC, SSO, SLA, managed upgrades
+
+Governance Dashboard: audit explorer, replay, drift timelines, incident views, export tooling
+
+Enterprise Adapters: SIEM/observability integrations, data retention, secure persistence adapters
+
+Policy Packs: education/LAs/government operational profiles (thresholds + runbooks + reporting)
+
+If you’re a school, LA, or public-sector organisation looking to operationalise VN-MW at scale, contact The Novacene for licensing and implementation support.
 
 ## ⚡ Quick Start  
 
@@ -140,8 +160,6 @@ GET	/	Health check (redirects to panel if configured)
 
 Example Payload
 ```
-json
-Copy code
 {
   "token_entropy": 4.2,
   "branch_factor": 3,
@@ -249,8 +267,9 @@ class VerseNervesHandler(BaseCallbackHandler):
         if r.get("controls", {}).get("citation_mode"):
             response.text = f"[CITATION MODE]\n{response.text}"
         self.tokens = 0
+```
 4️⃣ Node / JS
-js
+```js
 Copy code
 const VN = "https://verse-nerves.onrender.com";
 
@@ -281,7 +300,7 @@ Copy code
 Or host your own dashboard on GitHub Pages:
 👉 https://thenovacene.github.io/verse-nerves/?api=https://verse-nerves.onrender.com
 
-🔒 Safety Notes
+## 🔒 Safety Notes
 Never send raw PII — use scores or hashes.
 
 Treat VN-MW controls as advisory until tuned.
@@ -301,14 +320,11 @@ Copy code
   "recursion_depth": 1
 }
 ```
-⚙️ Config & Roadmap
-```
-.env.example for environment knobs
+## ⚙️ Config & Roadmap
+Environment knobs: .env.example
+Thresholds: vn_mw/config.py
 
-vn_mw/config.py for thresholds
-```
-
-Roadmap:
+## Roadmap:
 
 SSE/WebSocket stream for /vn/controls
 
@@ -328,7 +344,12 @@ Use it to track symbolic coherence, containment, and emotional pressure
 in relation to AI system behaviour. Over time, the patterns reveal your personal or organisational “coherence geometry.”
 
 
-📜 License
-⚖️ Code: AGPL-3.0-only • Content: CC BY-NC-SA 4.0 • ™ Eve¹¹ / Verse-Nerves / Verse-ality
+## 📜 Licensing & Marks
+
+Code: AGPL-3.0-only (see LICENSE)
+
+Docs & examples: CC BY-NC-SA 4.0 (see LICENSE-CONTENT)
+
+Trademarks: “Eve¹¹”, “Verse-Nerves”, and “Verse-ality” are protected marks. You may fork and modify the code under AGPL, but you must not present your fork as official or endorsed without written permission (see TRADEMARKS.md).
 
 © 2025 The Novacene Ltd / Kirstin Stevens
